@@ -1,0 +1,66 @@
+<!--MD AFTAB RAZA-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AH-Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1 style="color:red">AH-Color Picker</h1>
+    </div>
+    <div class="color-picker-container">
+        <div id="colorPicker" class="color-picker"></div>
+        <div id="color-indicator" class="color-indicator"></div>
+    </div>
+<div id="color-values">
+        <h3>Current Color Values:</h3>
+        <div class="color-value-item">
+            <p id="currentColorHex">Hex: <span> #ab0089 </span></p>
+            <button class="copy-btn" data-target="#currentColorHex">COPY</button>
+        </div>
+        <div class="color-value-item">
+            <p id="currentColorRGB">RGB: <span> 171, 0, 137 </span></p>
+            <button class="copy-btn" data-target="#currentColorRGB">COPY</button>
+        </div>
+        <div class="color-value-item">
+            <p id="currentColorRGBA">RGBA: <span> 171, 0, 137, 1 </span></p>
+            <button class="copy-btn" data-target="#currentColorRGBA">COPY</button>
+        </div>
+        <div class="color-value-item">
+            <p id="currentColorHSL">HSL: <span> 312, 100%, 34% </span></p>
+            <button class="copy-btn" data-target="#currentColorHSL">COPY</button>
+        </div>
+    </div>
+    <div><h3>Convert Color Values:</h3></div>
+    <div>
+        <label for="hexInput">Hex:</label>
+        <input type="text" id="hexInput" value="#ab0089">
+    </div>
+    <div>
+        <label for="rgbInput">RGB:</label>
+        <input type="text" id="rgbInput" value="171, 0, 137">
+    </div>
+    <div>
+        <label for="rgbaInput">RGBA:</label>
+        <input type="text" id="rgbaInput" value="171, 0, 137, 1">
+    </div>
+    <div>
+        <label for="hslInput">HSL:</label>
+        <input type="text" id="hslInput" value="312, 100%, 34%">
+    </div>
+    <div class="alpha-slider-container">
+        <label for="alphaSlider">Alpha:</label>
+        <input type="range" id="alphaSlider" class="alpha-slider" min="0.0" max="1" step="0.01" value="1">
+        <span id="alphaValue">1</span>
+    </div>
+</div>
+<!-- Swiper JS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
